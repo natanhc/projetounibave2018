@@ -1,0 +1,88 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Seletivo Unibave 2018</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <link href="css/bootstrap.css" rel="stylesheet">    
+    <link href="css/resultados.css" rel="stylesheet">
+    
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script> 
+    
+    <script type="text/javascript"> 
+        jQuery.fn.toggleText = function(a,b) {
+            return   this.html(this.html().replace(new RegExp("("+a+"|"+b+")"),function(x){return(x==a)?b:a;}));
+        }
+        $(document).ready(function(){
+            $('.tgl').before('<span>Aprovados ▼</span>');
+            $('.tgl').css('display', 'none')
+            $('span', '#box-toggle').click(function() {
+                $(this).next().slideToggle(1000)
+                .siblings('.tgl:visible').slideToggle('fast');
+                // aqui começa o funcionamento do plugin
+                $(this).toggleText('Mostrar','Esconder')
+                .siblings('span').next('.tgl:visible').prev()
+                .toggleText('Revelar','Esconder')
+            });
+        })
+        </script>    
+</head>
+<body>
+    <div class="corpo">
+       <div class="left">
+            <div class="container">
+                <div class="tinta">
+                    <p class="subtitulo">RESULTADOS</p>
+                </div>
+                <div class="textos">
+                <p>Clique no curso para conferir a lista de aprovados no VEM Unibave:</p>
+            </div>
+                <!--CORPO-->
+                					
+            <div class="itemDownload"><a href="https://unibave.net/download?arquivo=/2017/12/ADM.pdf"><span class="titleDownload"> Administração </span></a></div>
+
+           <div class="itemDownload"><a href="https://unibave.net/download?arquivo=/2017/12/Agronomia.pdf"><span class="titleDownload"> Agronomia</span></a></div>
+
+           <div class="itemDownload"><a href="https://unibave.net/download?arquivo=/2017/12/CienciasContabeis.pdf"><span class="titleDownload"> Ciências Contábeis</span></a></div>
+
+           <div class="itemDownload"><a href="https://unibave.net/download?arquivo=/2017/12/Direito.pdf"><span class="titleDownload"> Direito</span></a></div>
+
+           <div class="itemDownload"><a href="https://unibave.net/download?arquivo=/2017/12/EducacaoFisica.pdf"><span class="titleDownload">Educação Física</span></a></div>
+
+           <div class="itemDownload"><a href="https://unibave.net/download?arquivo=/2017/12/Enfermagem.pdf"><span class="titleDownload"> Enfermagem </span></a></div>
+
+           <div class="itemDownload"><a href="https://unibave.net/download?arquivo=/2017/12/ambiental.pdf"><span class="titleDownload"> Engenharia Ambiental e Sanitária</span></a></div>
+
+           <div class="itemDownload"><a href="https://unibave.net/download?arquivo=/2017/12/civil.pdf"><span class="titleDownload"> Engenharia Civil</span></a></div>
+
+           
+           <div class="itemDownload"><a href="https://unibave.net/download?arquivo=/2017/12/producao.pdf"><span class="titleDownload"> Engenharia de Produção</span></a></div>
+
+           <div class="itemDownload"><a href="https://unibave.net/download?arquivo=/2017/12/Farmácia.pdf"><span class="titleDownload"> Farmácia</span></a></div>
+
+           <div class="itemDownload"><a href="https://unibave.net/download?arquivo=/2017/12/Medicina-Veterinária-1.pdf"><span class="titleDownload"> Medicina Veterinária </span></a></div>
+
+           <div class="itemDownload"><a href="https://unibave.net/download?arquivo=/2017/12/Pedagogia-3.pdf"><span class="titleDownload"> Pedagogia</span></a></div>
+
+           <div class="itemDownload"><a href="https://unibave.net/download?arquivo=/2017/12/Psicologia-2.pdf"><span class="titleDownload">Psicologia </span></a></div>
+
+           <div class="itemDownload"><a href="https://unibave.net/download?arquivo=/2017/12/Sistemas-de-Informação.pdf"><span class="titleDownload">Sistemas de Informação</span></a></div>
+            </div>
+        </div>
+       <div class="right">
+            <div class="social">
+                <a href="https://www.facebook.com/unibave" target="_blank" ><img src="img/facebook.png" alt="" class="botao"></a>
+                <a href="https://www.instagram.com/unibave/" target="_blank" ><img src="img/instagram.png" alt="" class="botao"></a>
+                <a href="http://bit.ly/whatsunibave" target="_blank" ><img src="img/whatsapp.png" alt="" class="botao"></a>
+           </div>        
+            <div class="menu">
+                <a href="http://academico.unibave.net/unibave/procsel/processoseletivo.do?evento=iniciar&concursoID=42"></a>
+                <p class="texto2"><strike>INSCREVA-SE</strike></p>
+                <a href="http://unibave.net/download?arquivo=/2017/09/Edital-VEM-2018.pdf"><p class="texto2"> EDITAL </p></a>
+                <a href="sou"><p class="texto2">RESULTADO</p></a>
+                <a href="index.html"><p class="texto2">VOLTAR</p></a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
